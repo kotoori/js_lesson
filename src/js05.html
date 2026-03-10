@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- noindex,nofollow -->
+  <meta name="robots" content="noindex,nofollow">
+
+  <!-- ページ属性情報 -->
+  <title>タイトルタイトルタイトル</title>
+  <meta name="description" content="詳細説明詳細説明詳細説明">
+</head>
+<body>
+
+  <script>
+    //BMI 体重(kg) / 身長(m) * 身長(m)
+    let height = 1.73;
+    let weight = 78;
+    let bmi = weight / (height * height);
+    if(bmi < 18.5){
+      document.writeln(`<p>やせ型</p>`);
+    }else if(bmi < 25){
+      document.writeln(`<p>標準</p>`);
+    }else if(bmi < 30){
+      document.writeln(`<p>肥満1型</p>`);
+    }else if(bmi < 35){
+      document.writeln(`<p>肥満2型</p>`);
+    }else{
+      document.writeln(`<p>肥満3型以上</p>`);
+    }
+    document.writeln(`<p>BMI: ${bmi}</p>`);
+  </script>
+</body>
+</html>

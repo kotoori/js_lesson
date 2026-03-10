@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- noindex,nofollow -->
+  <meta name="robots" content="noindex,nofollow">
+
+  <!-- ページ属性情報 -->
+  <title>タイトルタイトルタイトル</title>
+  <meta name="description" content="詳細説明詳細説明詳細説明">
+
+</head>
+<body>
+
+  <script>
+    cities = ['Tokyo', 'Kyoto', 'Osaka'];
+    for(let city of cities){
+      document.writeln(city + '<br>');
+    }
+    cities.push('Nagoya'); //配列の最後尾に追加
+    let i = 0;
+    while(i < cities.length){
+      document.writeln(`<p>${cities[i]}</p>`);
+      i++;
+    }
+
+    cities[0] = 'Fukuoka';
+    let popData = cities.pop();
+    document.writeln(`<p>${popData}</p>`);
+    for(let city of cities){
+      document.writeln(city + '<br>');
+    }
+
+  </script>
+</body>
+</html>
